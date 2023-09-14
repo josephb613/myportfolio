@@ -229,3 +229,19 @@ $(document).ready(function() {
   }
   counterInit();
 });
+
+
+// window.onload = function() {
+//   // Masquer le chargement une fois la page entièrement chargée
+//   var loader = document.getElementById("loader");
+//   loader.style.display = "none";
+// }
+
+
+window.onload = function() {
+  // Masquer les éléments de chargement squelette une fois la page entièrement chargée
+  var skeletonElements = document.querySelectorAll(".skeleton");
+  skeletonElements.forEach(function(element) {
+    element.style.display = "none";
+  });
+}
