@@ -28,6 +28,18 @@
     <main>
 
 
+          <!------------loader---------->
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+
+
         <div class="container__bg-white ">
 
             <div class="hero-section">
@@ -113,6 +125,17 @@
     <footer>
 
     </footer>
+
+    <script>
+        window.addEventListener("load", function () {
+            // Attendre que la page soit entièrement chargée, puis masquer l'animation de chargement
+            var loader = document.querySelector(".loader");
+            loader.style.display = "none";
+        });
+    </script>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
